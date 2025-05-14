@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart X360</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./components/banner.css" />
+  <link rel="stylesheet" href="./components/header.css" />
+  <link rel="stylesheet" href="./components/problems.css">
+  <link rel="stylesheet" href="./fonts/font.css">
+  <link rel="stylesheet" href="./components/clients.css">
+  <link rel="stylesheet" href="./components/result.css">
+  <link rel="stylesheet" href="./media.css">
+  <link rel="stylesheet" href="./components/contact.css">
+  <link rel="stylesheet" href="./components/footer.css">
+  <link rel="icon" href="/images/projectLogo.svg" type="image/png">
+
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="container">
+        <div class="content">
+            <a href="#!" class="logo">
+                <img src="./images/logo.svg.svg" class="logo-img" alt="nike-logo-img" />
+            </a>
+            <nav class="header-nav">
+                <a href="#!" class="header-nav_link" data-lang-key="home">Bosh sahifa</a>
+                <a href="#!" class="header-nav_link" data-lang-key="about">Biz haqimizda</a>
+                <a href="#!" class="header-nav_link" data-lang-key="projects">Loyihalar</a>
+                <a href="#!" class="header-nav_link" data-lang-key="services">Xizmatlar</a>
+                <a href="#!" class="header-nav_link" data-lang-key="contact">Bog'lanish</a>
+
+             <div class="lang">
+  <img class="lang-img" src="./images/lang.svg" alt="Language" onclick="toggleDropdown()" />
+  <div class="lang-dropdown">
+    <a href="#!" onclick="changeLanguage('en')">
+      <img class="lang-flag" src="./images/us.svg" alt="English" /> EN
+    </a>
+    <a href="#!" onclick="changeLanguage('uz')">
+      <img class="lang-flag" src="./images/uz.svg" alt="Uzbek" /> UZ
+    </a>
+  </div>
+</div>
+
+            </nav>
+
+            <div class="burger-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+  <main>
+    <section class="hero">
+      <div class="hero-container">
+          <span class="green">Smart X360</span> <br> <h1 data-lang-key="banner_title"> TOTAL CONTROL OF YOUR BUILDING</h1>
+
+        <div class="hero-image-wrapper">
+          <img src="./images/banner.png" alt="Building" class="building-img" />
+          <div class="image-caption" data-lang-key="banner_desc">
+            Integration of IoT devices and software to monitor, control and optimize all building engineering systems.
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn dark">
+            <p data-lang-key="banner_button1">Request demo</p>
+          </button>
+          <button class="btn light">
+            <p data-lang-key="banner_button2">Download info PDF</p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="problems-section">
+      <h2 class="problems-title" data-lang-key="problmes_title" style="text-align:center;">Problems that we are solving</h2>
+
+      <div class="container">
+        <div class="problems-container">
+
+          <div class="problems">
+            <div class="problem-item" data-lang-key="problem1"><p>❌ High energy bills</p> </div>
+            <div class="problem-item" data-lang-key="problem2" ><p>❌ No control over air conditioning and lighting </p></div>
+            <div class="problem-item" data-lang-key="problem3" ><p>❌ Water and gas leaks – not detected in time </p></div>
+            <div class="problem-item" data-lang-key="problem4" ><p>❌ Building security not automated </p></div>
+            <div class="problem-item" data-lang-key="problem5" ><p>❌ Cannot be controlled remotely</p></div>
+            <div class="vertical-line"></div>
+          </div>
+
+          <div class="solution">
+            <img class="solution-logo" src="./images/projectLogo.svg" alt="Smart X360 Logo" />
+            <div class="solution-name"> <span data-lang-key="solution">Solution</span> <span class="solution_spani">Smart X360</span></div>
+            <div class="solution-description"> <p data-lang-key="solution_desc">✅ Complete control 24/7 from <br> single control panel </p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="smart-section">
+      <div class="container smart-container">
+        <div>
+          <h2 class="smart-title">
+             <span data-lang-key="how_part"></span>
+  <span class="highlight">Smart X360</span>
+  <span data-lang-key="works_part"></span>
+          </h2>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-content">
+              <div class="smart-icon"><img src="./images/sidebar-top.svg" alt=""></div>
+              <h3 data-lang-key="work_card1" >Analysis on your current building</h3>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="smart-icon"><img src="./images/sidebar-top.svg" alt=""></div>
+              <h3 data-lang-key="work_card2" >Installation of devices</h3>
+              <p data-lang-key="work_card2_desc" >sensors, controllers, locks, lighting</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="smart-icon"><img src="./images/sidebar-top.svg" alt=""></div>
+              <h3 data-lang-key="work_card3" >Connecting to the cloud</h3>
+              <p data-lang-key="work_card3_desc">all data in a secure server</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="smart-icon"><img src="./images/sidebar-top.svg" alt=""></div>
+              <h3 data-lang-key="work_card4">Automation</h3>
+              <p data-lang-key="work_card4_desc">create scenarios: turn on when a person is in the room</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="smart-icon"><img src="./images/sidebar-top.svg" alt=""></div>
+              <h3 data-lang-key="work_card5">Control</h3>
+              <p data-lang-key="work_card5_desc">access from phone and web</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-button">
+          <button data-lang-key="work_button">Watch demo video</button>
+        </div>
+    </section>
+
+    <section class="container features-section-container">
+      <div class="features-title" data-lang-key="feature_title">Features and functions</div>
+      <div class="features-container">
+        <div class="features-left-imgs">
+          <img src="./images/Rectangle 400.png" alt="Main building" />
+          <img src="./images/Rectangle 401.png" class="features-overlay-img" alt="Overlay building" />
+        </div>
+
+        <div class="features-content">
+
+          <div class="features-section">
+            <h3 > <img class="features-section-title-img" src="./images/sidebar-top.svg" alt=""> Supported devices:</h3>
+            <ul>
+              <li data-lang-key="feature_desc1_desc1">Motion, leakage, CO2, gas sensors</li>
+              <li data-lang-key="feature_desc1_desc2">Control of curtains, lamps, locks</li>
+              <li data-lang-key="feature_desc1_desc3">Control of chiller and sockets</li>
+            </ul>
+          </div>
+
+          <div class="features-section">
+            <h3><img class="features-section-title-img" src="./images/sidebar-top.svg" alt=""> Program services:</h3>
+            <ul>
+              <li data-lang-key="feature_desc2_desc1">Web and mobile application for easy access</li>
+              <li data-lang-key="feature_desc2_desc2">Energy monitoring and reports for analysis</li>
+              <li data-lang-key="feature_desc2_desc3">Notifications and alarms for improver security</li>
+              <li data-lang-key="feature_desc2_desc4">User authorization and management</li>
+              <li data-lang-key="feature_desc2_desc5">Smart automation rules</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <section class="results-section parallax">
+       <div class="container">
+        <h2 class="features-title" data-lang-key="results_title">Results of implementation in a real building</h2>
+      
+        <div class="results-top">
+          <div class="video-block">
+            <img src="./images/Subtract.png" alt="Video preview" />
+            <button class="play-btn">▶</button>
+          </div>
+      
+          <div class="info-cards-container">
+            <div class="top-row">
+              <div class="info-card">
+                <img src="images/Rectangle 397.png" alt="Energy saving" />
+                <div class="info-badge">
+                  <img src="images/Frame energy.svg" alt="check" />
+                  <div class="info-badge-desc">
+                    <strong>23%</strong>
+                    <span data-lang-key="results_card1">Reduction of energy consumption by 23%</span>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="info-card">
+                <img src="images/Rectangle 398.png" alt="Security improvement" />
+                <div class="info-badge">
+                  <img src="images/Frame check.svg" alt="check" />
+                  <div class="info-badge-desc">
+                    <strong>+2</strong>
+                    <span data-lang-key="results_card2">Security: +2 new levels of control</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            
+            <div class="stats-block">
+            <div class="stats-container">
+              <div class="stat">
+                <strong>200 m²</strong>
+                <span data-lang-key="results_green_card1">Office</span>
+              </div>
+              <div class="stat">
+                <strong>150+</strong>
+                <span data-lang-key="results_green_card2">Installed: devices</span>
+              </div>
+              <div class="stat">
+                <strong data-lang-key="results_green_card_year" >1 year</strong>
+                <span data-lang-key="results_green_card3">ROI in</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          
+        </div>
+      
+      
+       </div>
+    
+      </section> <br>
+
+
+    <section class="clients">
+      <div class="clients-header">
+        <h2 class="features-title clients-title" data-lang-key="clients_title">Our customers</h2>
+        <div class="clients-nav">
+          <button class="clients-btn clients-btn--light"><  </button>
+          <button class="clients-btn clients-btn--green"> > </button>
+        </div>
+      </div>
+
+      <div class="clients-cards">
+        <div class="clients-card">
+          <div class="clients-quote"><img src="./images/comment.svg" alt=""></div>
+          <p class="clients-text">
+            Integration of IoT devices and software to monitor, control and optimize all building engineering systems.
+          </p>
+          <div class="clients-user">
+            <img src="./images/Frame woman.png" alt="Jane Cooper" />
+            <div class="clients-user-info">
+              <strong>Jane Cooper</strong>
+              <small>CEO IT Park</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="clients-card">
+          <div class="clients-quote"><img src="./images/comment.svg" alt=""></div>
+          <p class="clients-text">
+            Integration of IoT devices and software to monitor, control and optimize all building engineering systems.
+          </p>
+          <div class="clients-user">
+            <img src="./images/freame man.png" alt="Esther Howard" />
+            <div class="clients-user-info">
+              <strong>Esther Howard</strong>
+              <small>Manager IT Park</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact-info">
+          <h3 class="contact-hey">Hey...</h3>
+          <h1 class="contact-title" data-lang-key="contact_title">Ready to connect the Smart X360?</h1>
+        </div>
+
+        <div class="form-container">
+          <div class="form-group">
+            <label for="fio" data-lang-key="name_input">Name</label>
+            <input type="text" id="fio" placeholder="Name" />
+          </div>
+          <div class="form-group">
+            <label for="phone" data-lang-key="phone_input">Phone</label>
+            <input type="tel" id="phone" placeholder="+998" />
+          </div>
+          <div class="form-group">
+            <label for="company" data-lang-key="company_input">Company</label>
+            <input type="text" id="company" placeholder="Company name" />
+          </div>
+          <button class="contact-demo-btn" data-lang-key="contact_button">Request a demo</button>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <div class="logo-title">
+              <img class="footer-logo-img" src="./images/logo.svg.svg" alt="smart logo" />
+              <div>
+                <p data-lang-key="footer_logo_desc">Control, Control and optimization of all engineering systems in a building through the integration of
+                  IoT devices and software</p>
+              </div>
+              <div class="social-icons">
+                <i class="fab fa-telegram"><img src="./images/Link (1).svg" alt="icn" /></i>
+                <i class="fab fa-facebook-f"><img class="fabicon" src="./images/Link (2).svg" alt="icn" /></i>
+                <i class="fab fa-instagram"><img class="fabicon" src="./images/Link (3).svg" alt="icn" /></i>
+                <i class="fab fa-linkedin-in"><img class="fabicon" src="./images/Link.svg" alt="icn" /></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h4 data-lang-key="footer_sections">Sections</h4>
+            <ul>
+              <li data-lang-key="footer_sections1">- Main page</li>
+              <li data-lang-key="footer_sections2">- Solutions</li>
+              <li data-lang-key="footer_sections3">- How it work</li>
+              <li data-lang-key="footer_sections4">- What you get</li>
+              <li data-lang-key="footer_sections5">- Real case</li>
+              <li data-lang-key="footer_sections6">- Testimonials</li>
+              <li data-lang-key="footer_sections7">- Call to action</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 data-lang-key="footer_services">Services</h4>
+            <ul>
+              <li data-lang-key="footer_services1">- Analysis on your current building</li>
+              <li data-lang-key="footer_services2">- Installation of devices</li>
+              <li data-lang-key="footer_services3">- Connecting to the cloud</li>
+              <li data-lang-key="footer_services4">- Automation</li>
+              <li data-lang-key="footer_services5">- Control</li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 data-lang-key="footer_link">Link</h4>
+            <p data-lang-key="footer_link1" style="line-height: 12px; width: 120px; margin-bottom: 15px;">Khorezm province, </p>
+             <p  style="line-height: 12px; width: 120px; margin-bottom: 15px;">Urganch, </p>
+             <p data-lang-key="footer_link2" style="line-height: 12px; width: 120px; margin-bottom: 15px;"> Peace Street, </p>
+             <p data-lang-key="footer_link3"  style="line-height: 12px; width: 120px; margin-bottom: 15px;"> House 6 </p>
+             
+
+            
+            <p><strong data-lang-key="footer_link4">Phone:</strong> +998 94 239 15 18</p>
+            <p><strong>E-mail:</strong> info@gk-tech.uz</p>
+          </div>
+        </div>
+      </div> 
+      </footer>
+
+
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>

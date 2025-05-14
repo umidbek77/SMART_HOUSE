@@ -1,0 +1,161 @@
+@import url(../fonts/font.css);
+
+/* header start */
+
+.page-header {
+  position: sticky;
+  top: 0;
+  padding-block: 20px;
+  z-index: 1000;
+  max-width: 100%;
+  background: linear-gradient(rgba(173, 255, 188, 0.9), rgba(233, 255, 243, 1));
+  box-sizing: border-box;
+}
+.content {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 185.21px;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header-nav_link {
+  color: #1b2f45;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 23px 14px;
+  transition: 0.4s;
+  text-decoration: none;
+}
+
+.header-nav_link:hover {
+  color: #00a650;
+}
+
+/* .lang {
+  width: 30px;
+  display: flex;
+  align-items: center;
+} */
+/* Language icon styling */
+.lang-img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.lang-img:hover {
+  transform: scale(1.1);
+}
+
+/* Localization dropdown container */
+.lang {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.lang:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown menu styling */
+.lang-dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: -12px;
+  background: linear-gradient(rgba(173, 255, 188, 0.9), rgba(233, 255, 243, 1));
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+/* Show the dropdown when active */
+.lang.active .lang-dropdown {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dropdown link styling */
+.lang-dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 12px 10px;
+  text-decoration: none;
+  color: #1b2f45;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+/* Language flag styling */
+.lang-dropdown .lang-flag {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+
+/* Hover effect */
+.lang-dropdown a:hover {
+  background-color: rgba(10, 241, 60, 0.2);
+}
+
+/* Arrow indicator */
+/* .lang::after {
+  content: '▼';
+  font-size: 10px;
+  color: white;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+} */
+
+.lang.active::after {
+  transform: rotate(180deg);
+}
+
+
+.burger-menu {
+  width: 30px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+.burger-menu div {
+  width: 100%;
+  display: block;
+  height: 2px;
+  background-color: #00a650;
+}

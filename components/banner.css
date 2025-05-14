@@ -1,0 +1,86 @@
+@import url(../fonts/font.css);
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+.hero h1,
+.green {
+  font-size: 75px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+.hero .green {
+  color: #00a650;
+}
+.hero-container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* Rasm qismi */
+.hero-image-wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+  /* aspect-ratio: 16 / 9; */
+}
+
+.building-img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Rasm tagidagi bubble caption */
+.image-caption {
+  position: relative;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-130%);
+  background: white;
+  max-width: 50%;
+  padding: 0 16px;
+  font-size: 20px;
+  color: #444;
+  z-index: -1;
+}
+
+/* Tugmalar */
+.buttons {
+  /* margin-top: 50px; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 285px;
+  padding: 28px 20px;
+  border-radius: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.btn p {
+  font-weight: 500;
+}
+
+.btn.dark {
+  background: radial-gradient(#029985, #048876, #00695b);
+  color: #fff;
+}
+
+.btn.light {
+  background: linear-gradient(#dcffb9, #bfff7e);
+  color: #029985;
+}
